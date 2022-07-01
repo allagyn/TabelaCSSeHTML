@@ -1,0 +1,121 @@
+/*Selecionando todos os Elementos*/
+* {
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 5px;
+}
+body {
+    display: flex;
+    justify-content: center; /*Alinha a Tabela ao centro*/
+    align-items: center; /*Alinha a Tabela ao centro*/
+    background: #FCFCFC;
+    height: 125vh;
+    width: 85vh;
+    font-family: 'arial', sans-serif;
+      
+}
+/*Formatação da Tabela*/
+.tabela {
+    display: box;
+    background-color: #FCFCFC;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    border-collapse: collapse;
+          
+}
+.tabela tr {
+    border: 1px solid #DDDDDD; /*Cores da Linhas da tabela*/
+
+}
+.tabela th,
+.tabela td {
+    padding: 7px; /*Espaçamento entre as células*/
+    /*border: 1px solid #DDDDDD; /*Cores da Linhas da tabela*/
+    max-width: 1200px; /*Maximo de largura da celula - Faz Ajuste ao conteúdo*/
+}
+/*cor transparente na borda direita de todas as primeiras td e TH*/
+.tabela thead { /*Formatação dos titulos da coluna*/
+    color: #999999;
+    font-size: 13px;
+    font-weight: bold;
+    align-items: center;
+}
+th:first-of-type {
+    border-right-color: transparent;
+}
+td:first-of-type {
+    border-right-color: transparent;
+}
+td.libertadores {
+    color: #003366;
+
+}
+td.pre-liberta {
+    color: #1398BE;
+    }
+td.sul-america {
+    color: #DE9800;
+}
+td.parados {
+    color: #CCCCCC;
+}
+td.rebaixamento {
+    color: #C91B04;
+}
+tbody.corpo-tabela {
+    color: #666666;
+    font-size: 14px;
+    align-items: center;
+    }
+/*Listras da Tabela*/
+.tabela tbody td:nth-child(odd){
+    background-color: #f7f7f7;
+}
+/*Elemento 1 posição de classificação*/
+.tabela tbody td:nth-child(1){
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    align-items: center;
+}
+.tabela tbody td:nth-child(2) { /*Nome dos Times*/
+    width: 250px;
+    font-weight: bold;
+    text-align: left;
+}
+/* Elemento 3 é Pontos*/
+.tabela tbody td:nth-child(3) {
+    color: #000000;
+    font-weight: bold;
+    align-items: center;
+}
+/*Personalização da linha 4 e 16 para borda baixa 2px*/
+tbody tr:nth-child(4), tbody tr:nth-child(16) { 
+    border-bottom: 2px solid #CCCCCC;
+}
+tfoot i:nth-child(1) { /* Elemento Quadrado Libertadores*/
+    color: #003366;
+}
+tfoot i:nth-child(2) { /* Elemento Quadrado Pré-L*/
+    color: #1398BE;
+    }
+tfoot i:nth-child(3) { /* Elemento Quadrado SUL*/
+    color: #DE9800;
+}
+tfoot i:nth-child(4) { /* Elemento Quadrado REB*/
+    color: #C91B04;
+}
+
+.legendas {
+    font-size: 10px;
+    color: #8F8F8F;
+    text-align: left;
+    
+}
+
+.siglas {
+    color: #555555;
+    font-size: 9px;
+    text-align: left;
+    
+    
+}
